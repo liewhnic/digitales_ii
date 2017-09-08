@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Fri Sep  8 00:02:10 2017
+[*]
+[dumpfile] "/home/cesar/Desktop/UCR II 2017 Final/IE0523 Digitales 2/Tareas/Tarea5/digitales_ii/Tarea5/desplazador.vcd"
+[dumpfile_mtime] "Thu Sep  7 23:56:54 2017"
+[dumpfile_size] 12946
+[savefile] "/home/cesar/Desktop/UCR II 2017 Final/IE0523 Digitales 2/Tareas/Tarea5/digitales_ii/Tarea5/registro4B.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-15.502227 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] register_tb.
+[sst_width] 196
+[signals_width] 102
+[sst_expanded] 1
+[sst_vpaned_height] 155
+@28
+register_tb.CLK
+register_tb.DIR
+@22
+register_tb.D[3:0]
+@28
+register_tb.ENB
+register_tb.MODE[1:0]
+@22
+register_tb.Q[3:0]
+@28
+register_tb.S_IN
+register_tb.S_OUT
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,180 @@
+$date
+	Fri Sep  8 15:26:07 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! s_out $end
+$var wire 1 " s_in $end
+$var wire 4 # q [3:0] $end
+$var wire 2 $ modo [1:0] $end
+$var wire 1 % enb $end
+$var wire 1 & dir $end
+$var wire 4 ' d [3:0] $end
+$var wire 1 ( clk $end
+$scope module reg1 $end
+$var wire 1 " s_in $end
+$var wire 2 ) mode [1:0] $end
+$var wire 1 % enb $end
+$var wire 1 & dir $end
+$var wire 4 * d [3:0] $end
+$var wire 1 ( clk $end
+$var reg 4 + q [3:0] $end
+$var reg 1 ! s_out $end
+$upscope $end
+$scope module test1 $end
+$var reg 1 ( clk $end
+$var reg 4 , d [3:0] $end
+$var reg 1 & dir $end
+$var reg 1 % enb $end
+$var reg 2 - modo [1:0] $end
+$var reg 1 " s_in $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10 -
+b1 ,
+bx +
+b1 *
+b10 )
+0(
+b1 '
+0&
+1%
+b10 $
+bx #
+1"
+x!
+$end
+#2
+b1 #
+b1 +
+0!
+1(
+#4
+1&
+b1 $
+b1 )
+b1 -
+0(
+#6
+b1000 #
+b1000 +
+1(
+#8
+0(
+#10
+b100 #
+b100 +
+1(
+#12
+0(
+#14
+b10 #
+b10 +
+1(
+#16
+0(
+#18
+b1 #
+b1 +
+1(
+#20
+0&
+0(
+#22
+b10 #
+b10 +
+1(
+#24
+0(
+#26
+b100 #
+b100 +
+1(
+#28
+0(
+#30
+b1000 #
+b1000 +
+1(
+#32
+0(
+#34
+b1 #
+b1 +
+1(
+#36
+1&
+b0 $
+b0 )
+b0 -
+0(
+#38
+1!
+b1000 #
+b1000 +
+1(
+#40
+0(
+#42
+0!
+b1100 #
+b1100 +
+1(
+#44
+0(
+#46
+b1110 #
+b1110 +
+1(
+#48
+0(
+#50
+b1111 #
+b1111 +
+1(
+#52
+b10 $
+b10 )
+b10 -
+0(
+#54
+b1 #
+b1 +
+1(
+#56
+0&
+b0 $
+b0 )
+b0 -
+0(
+#58
+b11 #
+b11 +
+1(
+#60
+0(
+#62
+b111 #
+b111 +
+1(
+#64
+0(
+#66
+b1111 #
+b1111 +
+1(
+#68
+0(
+#70
+1!
+1(
+#72
+0(

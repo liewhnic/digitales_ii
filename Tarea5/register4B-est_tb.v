@@ -6,8 +6,8 @@ module register_tb();
   wire [3:0] Q;
 
 
-  probador p1(CLK,ENB,DIR,S_IN,MODE,D);
-  register reg1 (S_OUT,CLK,ENB,DIR,S_IN,MODE,D,Q);
+  tester p1(CLK,ENB,DIR,S_IN,MODE,D);
+  register reg1(S_OUT,CLK,ENB,DIR,S_IN,MODE,D,Q);
 
   initial
     begin

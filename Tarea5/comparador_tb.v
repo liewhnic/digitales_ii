@@ -2,20 +2,22 @@ module testbench();
 
 wire [1:0] MODE;
 wire [3:0] D;
+
+
 output wire [3:0] Qcond;
 output wire [3:0] Qest;
 
 output wire  Sreal;
 output wire  Qreal;
 
+tester tst1(CLK,ENB,DIR,S_IN,MODE,D);
 
-probador tst1(CLK,ENB,DIR,S_IN,MODE,D);
+reg_desp Rcond(s_outcond,CLK,ENB,DIR,S_IN,MODE,D,Qcond);
+register Rest(s_outest,CLK,ENB,DIR,S_IN,MODE,D,Qest);
 
-reg_desp Rcond(Qcond,s_outcond,CLK,ENB,DIR,S_IN,MODE,D);
-register Rest(.S_OUT(s_outest),.CLK(CLK),.ENB(ENB),.DIR(DIR),.S_IN(S_IN),.MODE(MODE),.D(D),.Q(Qest));
-
-comparador4BS compaS(s_outcond,s_outest,Sreal);
 comparador4BQ compaQ(Qcond,Qest,Qreal);
+comparador4BS compaS(s_outcond,s_outest,Sreal);
+
 initial
   begin
     $dumpfile("comparador4B.vcd");

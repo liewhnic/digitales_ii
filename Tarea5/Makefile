@@ -1,9 +1,24 @@
-all:
-	iverilog -Wall -o registro4B.out comparador.v comparador_tb.v flipflop.v mux.v nand.v nor.v not.v register4B-cond.v register4B-est.v register4B-est_tb.v tester4B.v; vvp registro4B.out; gtkwave desplazador.vcd registro4B.gtkw &
+#IE-0523 Circuitos Digitales II
+#Tarea 5. Makefile.
+#Estudiante:	César Valverde Zuñiga
+#				Isaac Gomez Sanchez
+#A86605	/ B32919	II Ciclo 2017
+
+#conductual:
+	#iverilog -o registro register4B-cond.v  registrodesp_tb.v tester.v
+	#vvp registro
+	#gtkwave registro.vcd registro4B.gtkw &
+	
+estructural:
+	iverilog -o registroest register4B-est.v  register4B-est_tb.v tester.v
+	vvp registroest
+	gtkwave desplazador.vcd
 
 compare:
-	iverilog -Wall -o comparador4B.out comparador.v comparador_tb.v register4B-cond.v register4B-est.v; vvp comparador4B.out; gtkwave comparador4B.vcd comparador.gtkw &
-
+	iverilog -Wall -o comparador4B comparador.v comparador_tb.v register4B-cond.v register4B-est.v tester.v
+	vvp comparador4B
+	gtkwave comparador4B.vcd comparador.gtkw &
+	
 yosys:
 	read_verilog register-cond.v
 	hierarchy -check -top register-cond
@@ -24,4 +39,6 @@ yosys:
 	write_verilog sintetizado.v
 
 clean:
-	rm *.out *vcd
+	rm -f registroest desplazador.vcd
+	rm -f registro registro.vcd
+	rm -f comparador4B comparador4B.vcd 

@@ -1,11 +1,10 @@
 `include "register4B-est.v"
 `include "register4B-cond.v"
+
 module comparador4BQ(Qconductual,Qestructural,Qreal);
 
 input wire [3:0] Qconductual;
 input wire [3:0] Qestructural;
-
-
 
 output reg  Qreal;
 
@@ -27,6 +26,7 @@ module comparador4BS(Sconductual,Sestructural,Sreal);
 input wire  Sconductual;
 input wire  Sestructural;
 output reg  Sreal;
+
 always@(*)
     begin
       if(Sconductual == Sestructural)

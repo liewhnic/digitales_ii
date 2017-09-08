@@ -1,4 +1,4 @@
-module reg_desp(q,s_out,clk,enb,dir,s_in,mode,d);
+module reg_cond(q,s_out,clk,enb,dir,s_in,mode,d);
 input clk,enb,dir,s_in;
 input [1:0] mode;
 input [3:0] d;

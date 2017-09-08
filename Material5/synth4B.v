@@ -3,7 +3,7 @@
 
 (* top =  1  *)
 (* src = "register.v:1" *)
-module reg_desp(q, s_out, clk, enb, dir, s_in, mode, d);
+module reg_estruc(q, s_out, clk, enb, dir, s_in, mode, d);
   (* src = "register.v:7" *)
   wire [3:0] _000_;
   (* src = "register.v:7" *)

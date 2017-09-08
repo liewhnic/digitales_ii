@@ -4,8 +4,9 @@ wire [1:0] mode;
 wire [3:0] d;
 output wire [3:0] q;
 
-tester tst1(clk,enb,dir,s_in,mode,d);
-reg_desp reg1(q,s_out,clk,enb,dir,s_in,mode,d);
+tester tst1(clk,enb,dir,s_in,mode,d, q_c, q_e s_out_c, s_out_e);
+reg_cond reg1(q_c,s_out_c,clk,enb,dir,s_in,mode,d);
+reg_estruc reg2(q_e,s_out_e,clk,enb,dir,s_in,mode,d);
 
 
 initial

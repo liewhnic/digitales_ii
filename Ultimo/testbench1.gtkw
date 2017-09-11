@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.66 (w)1999-2015 BSI
+[*] Mon Sep 11 05:07:19 2017
+[*]
+[dumpfile] "/home/cesar/Desktop/UCR II 2017 Final/IE0523 Digitales 2/Tareas/Tarea5/Ultimo/register4B_tb1.vcd"
+[dumpfile_mtime] "Mon Sep 11 05:05:11 2017"
+[dumpfile_size] 3078
+[savefile] "/home/cesar/Desktop/UCR II 2017 Final/IE0523 Digitales 2/Tareas/Tarea5/Ultimo/testbench1.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-5.865934 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[sst_width] 196
+[signals_width] 102
+[sst_expanded] 1
+[sst_vpaned_height] 155
+@28
+testbench.clk
+@22
+testbench.d[3:0]
+@28
+testbench.dir
+testbench.enb
+testbench.mode[1:0]
+@22
+testbench.q[3:0]
+@28
+testbench.s_in
+testbench.s_out
+[pattern_trace] 1
+[pattern_trace] 0
